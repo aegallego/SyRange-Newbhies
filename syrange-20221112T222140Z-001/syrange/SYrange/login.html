@@ -1,0 +1,146 @@
+<html>
+<head>
+<link rel="shortcut icon" type="image/x-icon" href="icon.png" />
+<title>Log-in</title>
+</head>
+
+			<style>
+			@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
+			@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+			</style>
+			
+<style>
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #162942;
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  place-items: center;
+  overflow: hidden;
+  font-family: poppins;
+}
+
+.boxcontainer {
+  position: relative;
+  width: 350px;
+  height: 575px;
+  border-radius: 20px;
+  padding: 40px;
+  box-sizing: border-box;
+  background: #ecf0f3;
+  box-shadow: 7px 7px 7px #42abaf;
+}
+
+.brand-logo {
+  height: 130px;
+  width: 130px;
+  background-image: url("assets/img/hero/bgimg-unscreen.gif");
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: auto;
+}
+
+.brand-logo:hover {
+  box-shadow: 0px 5px 20px .9px #3F3F3F;
+}
+
+.brand-logo:hover {
+  -webkit-transform: scale(1.12);
+  transform: scale(1.12);
+  -webkit-transition: 1.0s ease-in-out;
+  transition: 1.0s ease-in-out;
+}
+
+.brand-title {
+  margin-top: 10px;
+  font-weight: 900;
+  font-size: 1.8rem;
+  color: #081B29;
+  letter-spacing: 1px;
+}
+
+.inputs {
+  text-align: left;
+  margin-top: 10px;
+  color: #081B29;
+}
+
+label, input, button {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+label {
+  margin-bottom: 4px;
+}
+
+label:nth-of-type(2) {
+  margin-top: 12px;
+}
+
+input::placeholder {
+  color: gray;
+}
+
+input {
+  background: #ecf0f3;
+  padding: 10px;
+  padding-left: 20px;
+  height: 50px;
+  font-size: 14px;
+  border-radius: 50px;
+  box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+}
+
+button {
+  margin-top: 20px;
+  background: #081B29;
+  height: 40px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  color:white;
+  box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px white;
+  transition: 0.5s;
+}
+
+button:hover {
+  opacity: 0.200;
+}
+
+input:hover {
+  opacity: 0.700;
+}
+
+</style>
+
+<body>
+<form action="home-log-in.html" method="post">
+<div class="boxcontainer">
+  <div class="brand-logo"></div>
+  <div class="brand-title">SyRange</div>
+  <div class="inputs">
+    <label>EMAIL</label>
+    <input type="email" id="email" name="email" placeholder="juandelacruz@gmail.com" required>
+	<label>USERNAME</label>
+    <input type="username" id="username" name="username" placeholder="juandelacruz" required> 
+    <label style= "margin-top: 10px">PASSWORD</label>
+    <input type="password" id="password" name="password" placeholder="minimum of 6 charaters" required>
+    <button type="submit">LOGIN</button>
+  </div>
+</div>
+</form>
+</body>
+</html>
